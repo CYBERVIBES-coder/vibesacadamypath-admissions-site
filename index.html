@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turn Your Ambition Into an Acceptance Letter — BrightPath Admissions (Demo)</title>
+  <meta name="description" content="Personalized admissions guidance — Book Your Free Strategy Call" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{ --navy:#0a2342; --amber:#ff9f43; --muted:#6b7280; --bg:#f7fafc; --content-width:1100px; --radius:10px; --accent-contrast:#ffffff; }
+    html,body{height:100%;}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0b1520;background:linear-gradient(0deg,#fbfdff, #f7fafc);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.5;}
+    .container{max-width:var(--content-width);margin:0 auto;padding:0 20px;}
+    header.sticky{position:sticky;top:0;z-index:60;backdrop-filter: blur(6px);background:rgba(255,255,255,0.8);border-bottom:1px solid rgba(11,21,32,0.06);}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+    .logo{font-weight:700;color:var(--navy);letter-spacing:0.2px;}
+    nav ul{display:flex;gap:20px;list-style:none;padding:0;margin:0;align-items:center;}
+    nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:15px;}
+    .cta{background:var(--amber);color:var(--accent-contrast);padding:10px 16px;border-radius:8px;border:none;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.08);text-decoration:none;}
+    .nav-right{display:flex;gap:12px;align-items:center;}
+    .hamburger{display:none;background:none;border:0;padding:8px;cursor:pointer;}
+    .hamburger .bar{width:22px;height:2px;background:var(--navy);display:block;margin:4px 0;border-radius:2px;}
+    .hero{padding:48px 0 36px;}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;}
+    .hero h1{font-size:28px;margin:0;color:var(--navy);line-height:1.05;}
+    .hero p.lead{margin:12px 0 18px;color:var(--muted);font-size:16px;}
+    .hero .trust{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:14px;margin-top:8px;}
+    .hero .hero-actions{display:flex;gap:12px;align-items:center;margin-top:18px;}
+    .placeholder-hero-illustration{width:100%;height:220px;background:linear-gradient(135deg,rgba(10,35,66,0.06),rgba(255,159,67,0.04));border-radius:12px;border:1px dashed rgba(11,21,32,0.06);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;}
+    section{padding:36px 0;border-bottom:1px solid rgba(11,21,32,0.03);background:transparent;}
+    h2.section-title{font-size:20px;margin:0 0 16px;color:var(--navy);}    
+    .grid-3{display:grid;grid-template-columns:1fr;gap:16px;}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(11,21,32,0.04);border:1px solid rgba(11,21,32,0.03);}    
+    .muted{color:var(--muted);font-size:15px;}    
+    .steps{display:flex;flex-direction:column;gap:12px;}    
+    .step{display:flex;gap:14px;align-items:flex-start;}    
+    .step .num{width:36px;height:36px;background:var(--navy);color:white;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:700;}    
+    .program-cards{display:grid;grid-template-columns:1fr;gap:12px;}    
+    .program-card{display:flex;flex-direction:column;gap:10px;padding:16px;}    
+    .program-card h3{margin:0;color:var(--navy);font-size:16px;}    
+    .program-card p{margin:0;color:var(--muted);font-size:14px;}    
+    .program-card .small-link{color:var(--navy);font-weight:600;text-decoration:none;font-size:14px;}    
+    .testimonials{display:grid;grid-template-columns:1fr;gap:12px;}    
+    .testimonial{display:flex;gap:12px;align-items:flex-start;}    
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--amber));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;}    
+    .quote{font-style:italic;color:var(--navy);margin:0;}    
+    .stats{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:16px;background:linear-gradient(90deg,rgba(10,35,66,0.03),rgba(255,159,67,0.02));border-radius:10px;}    
+    .stat{font-weight:700;color:var(--navy);}    
+    .accordion{max-width:900px;}    
+    .faq-item{border-top:1px solid rgba(11,21,32,0.03);padding:14px 0;}    
+    .faq-question{display:flex;justify-content:space-between;align-items:center;cursor:pointer;}    
+    .faq-answer{margin-top:8px;color:var(--muted);display:none;}    
+    footer{padding:28px 0;color:var(--muted);font-size:14px;}    
+    footer .foot-grid{display:flex;flex-direction:column;gap:10px;}    
+    .final-cta{background:var(--navy);color:white;border-radius:12px;padding:22px;text-align:center;}    
+    .lead-form{display:flex;flex-direction:column;gap:10px;max-width:480px;}    
+    .input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(11,21,32,0.08);font-size:15px;}    
+    .input:focus{outline:none;box-shadow:0 6px 18px rgba(10,35,66,0.06);border-color:rgba(10,35,66,0.12);}    
+    .form-row{display:flex;flex-direction:column;gap:8px;}    
+    .form-note{color:var(--muted);font-size:13px;}    
+    @media(min-width:760px){      .hero-grid{grid-template-columns:1fr 420px;gap:36px;}      .grid-3{grid-template-columns:repeat(3,1fr);gap:18px;}      .program-cards{grid-template-columns:repeat(3,1fr);}      nav ul{gap:22px;}      .hamburger{display:none;}      .nav-links-desktop{display:block;}      .nav-links-mobile{display:none;}      .testimonials{grid-template-columns:repeat(3,1fr);}      .testimonial{flex-direction:column;align-items:flex-start;}    }
+    @media(max-width:759px){      .hamburger{display:block;}      nav ul{display:none;}      .mobile-menu{display:none;}    }
+    .hidden{display:none;}
+  </style>
+</head>
+<body>
+
+<header class="sticky" role="banner" aria-label="Top navigation">
+  <div class="container nav" >
+    <div style="display:flex;gap:18px;align-items:center;">
+      <div class="logo" aria-hidden="true">BrightPath Admissions (Demo)</div>
+    </div>
+
+    <nav aria-label="Primary" class="nav-right" role="navigation">
+      <ul class="nav-links-desktop" id="nav-list">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#success">Success Stories</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer" id="nav-cta">Book Your Free Strategy Call</a>
+
+      <button class="hamburger" id="hambtn" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="mobile-menu container hidden" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <ul style="list-style:none;padding:14px 0;margin:0;display:flex;flex-direction:column;gap:12px;">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#success">Success Stories</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://calendly.com/brightpath/strategy-call" class="cta" target="_blank" rel="noopener noreferrer" style="display:inline-block;width:100%;text-align:center;">Book Your Free Strategy Call</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Turn Your Ambition Into an Acceptance Letter</h1>
+        <p class="lead">Personalized guidance from 12 education experts who've helped 4,200+ students get into top programs — without the guesswork.</p>
+
+        <div class="hero-actions" role="region" aria-label="Primary call to action">
+          <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer">Book Your Free Strategy Call</a>
+          <div class="muted small">No obligation · 30 minutes</div>
+        </div>
+
+        <div class="trust" aria-hidden="false">
+          <div>Trusted by students from 30+ countries</div>
+          <div>·</div>
+          <div>78% acceptance rate</div>
+          <div>·</div>
+          <div>Featured in Forbes Education</div>
+        </div>
+
+        <div style="margin-top:18px;">
+          <form id="leadForm" class="lead-form" aria-label="Book a free strategy call">
+            <div class="form-row">
+              <label for="name" class="small">Name</label>
+              <input id="name" name="name" class="input" required placeholder="Your name" />
+            </div>
+            <div class="form-row">
+              <label for="email" class="small">Email</label>
+              <input id="email" name="email" type="email" class="input" required placeholder="you@example.com" />
+            </div>
+            <div class="form-row">
+              <label for="stage" class="small">What are you applying for? (one short answer)</label>
+              <input id="stage" name="stage" class="input" placeholder="e.g., Master's in CS — Fall 2027" />
+            </div>
+            <div style="display:flex;gap:10px;align-items:center;margin-top:6px;">
+              <button class="cta" type="submit">Book Your Free Strategy Call</button>
+              <div class="form-note small">We will open a booking page after you submit.</div>
+            </div>
+            <div id="formMessage" class="small" style="display:none;margin-top:8px;color:var(--navy)"></div>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <div class="placeholder-hero-illustration" role="img" aria-label="Hero illustration placeholder">
+          Hero illustration / student photo placeholder (replace with 1600×900 image)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem">
+    <div class="container">
+      <h2 class="section-title">Applying Alone Is Costing You Opportunities</h2>
+      <div class="grid-3" style="grid-template-columns:repeat(3,1fr);margin-top:12px;">
+        <div class="card">
+          <h3 style="margin:0 0 8px;">You don't know which programs actually fit your profile</h3>
+          <p class="muted">We help you target the right programs so you stop wasting time on low-fit applications.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Deadlines and requirements change faster than you can track</h3>
+          <p class="muted">Get a clear timeline and checklist so nothing slips through the cracks.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;">One weak essay or missed step can sink an otherwise strong application</h3>
+          <p class="muted">We review your materials with a checklist that admissions officers actually use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <h2 class="section-title">Your Path in 4 Steps</h2>
+      <div class="steps" style="margin-top:12px;">
+        <div class="step">
+          <div class="num">1</div>
+          <div><strong>Free Assessment</strong> — We evaluate your profile and goals in a 30-minute call</div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div><strong>Custom Roadmap</strong> — Get a personalized plan with target programs and timeline</div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div><strong>Guided Execution</strong> — Work 1:1 with an advisor on essays, applications, and interviews</div>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <div><strong>Acceptance & Beyond</strong> — We help you compare offers and prepare for enrollment</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;">
+        <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer">Book Your Free Strategy Call</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="container">
+      <h2 class="section-title">Programs</h2>
+      <p class="muted">Outcome-focused options</p>
+
+      <div class="program-cards" style="margin-top:12px;">
+        <div class="card program-card">
+          <h3>Master's Accelerator</h3>
+          <p class="muted">Targeted master's application package that improves interview invites and admissions outcomes.</p>
+          <div style="margin-top:auto;"><a class="small-link" href="#programA">Learn more</a></div>
+        </div>
+
+        <div class="card program-card">
+          <h3>PhD Fast-Track</h3>
+          <p class="muted">Focused research-fit strategy to secure funded PhD offers.</p>
+          <div style="margin-top:auto;"><a class="small-link" href="#programB">Learn more</a></div>
+        </div>
+
+        <div class="card program-card">
+          <h3>Professional MBA Launch</h3>
+          <p class="muted">Executive-style support to get into top MBA programs and negotiate scholarships.</p>
+          <div style="margin-top:auto;"><a class="small-link" href="#programC">Learn more</a></div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer">Book Your Free Strategy Call</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="success">
+    <div class="container">
+      <h2 class="section-title">Real Students. Real Results.</h2>
+
+      <div class="testimonials" style="margin-top:12px;">
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true">MG</div>
+          <div>
+            <p class="quote">"BrightPath helped me refine my story and I received offers from 3 top programs, including my first choice." — <strong>Maria Gonzalez</strong>, admitted to <strong>Stanford MS Computer Science</strong></p>
+          </div>
+        </div>
+
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true">AP</div>
+          <div>
+            <p class="quote">"I improved my statement from average to standout; got a funded PhD offer within 6 months." — <strong>Arun Patel</strong>, admitted to <strong>MIT PhD Program</strong></p>
+          </div>
+        </div>
+
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true">SK</div>
+          <div>
+            <p class="quote">"With their help, I secured an MBA with a 40% scholarship and accelerated my career." — <strong>Sarah Kim</strong>, admitted to <strong>Columbia Business School</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer">Book Your Free Strategy Call</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Stats">
+    <div class="container">
+      <div class="stats">
+        <div class="stat">4,200+ Students Placed</div>
+        <div class="stat">78% Acceptance Rate</div>
+        <div class="stat">10 Years of Experience</div>
+        <div class="stat">75 Partner Institutions</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <h2 class="section-title">Meet the Team</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px;">
+        <div class="card" style="display:flex;gap:12px;align-items:center;">
+          <div class="avatar" style="width:84px;height:84px;border-radius:14px;">L</div>
+          <div>
+            <strong>Lead Advisor — Laura Kim</strong>
+            <div class="muted">10+ years advising students for top master's, PhD and MBA programs.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <h2 class="section-title">What's Included</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px;">
+        <div class="card">
+          <p class="muted">Personalized roadmap, essay reviews, interview prep, offer comparison support. Replace with actual pricing and package names if available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="accordion" style="margin-top:12px;">
+        <div class="faq-item">
+          <div class="faq-question"><div>How much does this cost?</div><div class="small">+</div></div>
+          <div class="faq-answer">Pricing varies by program and services — replace with your pricing or packages. (This placeholder must be updated before launch.)</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><div>How long does the process take?</div><div class="small">+</div></div>
+          <div class="faq-answer">Typical timelines depend on target deadlines; many students complete a full application cycle in 3–6 months with consistent work.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><div>What if I don't get in anywhere?</div><div class="small">+</div></div>
+          <div class="faq-answer">We help with strategy adjustments and next steps; outcomes depend on multiple factors and we provide post-cycle consulting options.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><div>Do you guarantee admission?</div><div class="small">+</div></div>
+          <div class="faq-answer">No legitimate advisor can guarantee admission; we commit to providing best-effort, proven guidance and support.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><div>I'm a weak applicant — can you still help?</div><div class="small">+</div></div>
+          <div class="faq-answer">Yes — we focus on highlighting strengths, crafting strong narratives, and selecting appropriate targets to maximize success.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><div>How is this different from doing it myself?</div><div class="small">+</div></div>
+          <div class="faq-answer">You get an advisor's admissions experience, a tailored roadmap, and review cycles that target common admissions pitfalls — saving time and improving outcomes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="container final-cta">
+      <h2 style="margin:0 0 8px;">Your Next Chapter Starts With One Conversation</h2>
+      <p style="margin:0 0 14px;color:rgba(255,255,255,0.9);">Spots for this application cycle are limited — book your free call today.</p>
+      <a class="cta" href="https://calendly.com/brightpath/strategy-call" target="_blank" rel="noopener noreferrer" style="background:var(--amber);color:#072033;">Book Your Free Strategy Call</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot-grid">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+        <div><strong>BrightPath Admissions (Demo)</strong> — Helping students since 2016</div>
+        <div class="small">Contact: hello@brightpathadmissions.com · Privacy · Terms</div>
+      </div>
+
+      <div style="display:flex;gap:12px;align-items:center;margin-top:10px;">
+        <div class="small">Follow us:</div>
+        <div class="small">[social links placeholders]</div>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  // Mobile menu toggling
+  const hambtn = document.getElementById('hambtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hambtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    hambtn.setAttribute('aria-expanded', String(!isHidden));
+    mobileMenu.style.display = isHidden ? 'none' : 'block';
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', function(e){
+      const href = this.getAttribute('href');
+      if(href === '#' || href.startsWith('#') && document.querySelector(href)){
+        const target = document.querySelector(href);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      }
+    });
+  });
+
+  // Demo form submission: shows success and opens Calendly booking link
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const stage = document.getElementById('stage').value.trim();
+    const msg = document.getElementById('formMessage');
+
+    // Demo behavior: show success message and open demo Calendly link.
+    msg.style.display='block';
+    msg.style.color='var(--navy)';
+    msg.textContent = 'Thanks! Opening the booking page now... (demo behavior)';
+    window.open('https://calendly.com/brightpath/strategy-call', '_blank', 'noopener');
+    this.reset();
+  });
+
+  // FAQ accordion behavior
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q = item.querySelector('.faq-question');
+    const a = item.querySelector('.faq-answer');
+    q.addEventListener('click', ()=>{
+      const open = a.style.display === 'block';
+      document.querySelectorAll('.faq-answer').forEach(x=>x.style.display='none');
+      a.style.display = open ? 'none' : 'block';
+    });
+  });
+
+  // Close mobile menu on outside click
+  document.addEventListener('click', (e)=>{
+    const target = e.target;
+    if(!mobileMenu.contains(target) && target !== hambtn && !hambtn.contains(target)){
+      mobileMenu.style.display='none';
+      mobileMenu.classList.add('hidden');
+      hambtn.setAttribute('aria-expanded','false');
+    }
+  });
+</script>
+
+<!-- Analytics placeholder: replace with GA4 or GTM snippet before going live. -->
+</body>
+</html>
